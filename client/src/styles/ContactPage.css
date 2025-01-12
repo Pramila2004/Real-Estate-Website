@@ -1,0 +1,141 @@
+/* General Styles */
+.contact-page {
+  width: 50%;
+  margin: auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+
+}
+
+/* Center the content */
+.contact-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 2rem; /* Default font size */
+}
+
+.contact-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: black;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #fece51;
+  box-shadow: 0 0 4px rgba(254, 206, 81, 0.5); /* Subtle glow on focus */
+}
+
+/* Button Styles */
+.contact-submit-btn {
+  background-color: #fece51;
+  color: black;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: #fcc333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-page {
+      width: 70%; /* Slightly narrower for medium screens */
+  }
+
+  .contact-title {
+      font-size: 1.8rem;
+  }
+
+  .contact-description {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+      width: 90%; /* Full width with margins */
+      padding: 20px 15px; /* Reduced padding for smaller screens */
+  }
+
+  .contact-title {
+      font-size: 1.6rem;
+  }
+
+  .contact-description {
+      font-size: 0.9rem;
+  }
+
+  input,
+  textarea {
+      font-size: 0.9rem; /* Adjust font size */
+      padding: 10px; /* Reduce padding */
+  }
+
+  .contact-submit-btn {
+      font-size: 1rem; /* Adjust button size */
+      padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+      width: 100%; /* Full width */
+      padding: 15px 10px; /* Compact padding for small devices */
+  }
+
+  .contact-title {
+      font-size: 1.4rem;
+  }
+
+  .contact-description {
+      font-size: 0.85rem;
+  }
+
+  input,
+  textarea {
+      font-size: 0.85rem;
+      padding: 8px; /* Further reduced padding */
+  }
+
+  .contact-submit-btn {
+      font-size: 0.9rem;
+      padding: 10px; /* Compact button size */
+  }
+}

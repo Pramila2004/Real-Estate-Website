@@ -1,0 +1,247 @@
+.singlepage {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 5rem 6rem;
+    overflow-x: hidden;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 1rem; /* Added padding to avoid horizontal overflow */
+  }
+  
+  .details {
+    width: 100%;
+    flex: 3;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    overflow-x: hidden;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  }
+  
+  .details .wrapper {
+    padding-right: 50px;
+  }
+  
+  .info {
+    margin-top: 10px;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  
+  .address {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .address img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .price {
+    padding: 5px;
+    background-color: #fece51;
+    width: max-content;
+    border-radius: 20px;
+  }
+  
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #fece51;
+    font-weight: 600;
+  }
+  
+  .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .bottom {
+    margin-top: 50px;
+    line-height: 20px;
+    color: #555;
+    margin-bottom: 5rem;
+  }
+  
+  .features {
+    width: 100%; /* Set width to 100% for smaller screens */
+    flex: 2;
+    padding: 2%;
+    overflow-x: hidden;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  }
+  
+  .features .wrapper {
+    padding: 0px 20px;
+    display: flex;
+    gap: 20px;
+    background-color: #fcf5f3;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    height: max-content;
+    margin-bottom: 5rem;
+    margin-right: 0;
+  }
+  
+  .features .wrapper img {
+    width: 20px;
+    height: 24px;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .list-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .list-horizontal {
+    display: flex;
+    gap: 20px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .feature-text span {
+    font-weight: bold;
+  }
+  
+  .feature-text p {
+    font-size: 14px;
+  }
+  
+  .sizes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .size {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons img {
+    height: 16px;
+    width: 16px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 320px) {
+    .singlepage {
+      margin: 0.5rem; /* Further reduce margin */
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .details {
+      padding: 5%;
+    }
+  
+    .post {
+      padding: 2rem 1rem;
+    }
+  
+    .price {
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .buttons button {
+      padding: 8px;
+      font-size: 12px; /* Smaller button font size */
+    }
+  
+    .user {
+      padding: 1rem;
+    }
+  
+    .feature-text p {
+      font-size: 0.8rem;
+    }
+  
+    .bottom {
+      margin-top: 20px; /* Reduce spacing */
+      text-align: justify;
+    }
+  
+    .wrapper {
+      width: 90%;
+      font-size: 1rem;
+    }
+  
+    .sizes .size span {
+      font-size: 0.8rem;
+    }
+  
+    /* Adjust feature columns for better fit */
+    .features .wrapper {
+      padding: 1.5rem; /* Reduce padding for features */
+      gap: 15px; /* Reduce gap for better fit */
+    }
+  }
+  

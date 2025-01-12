@@ -1,0 +1,169 @@
+/* General Styling for Form Container */
+.form-container {
+  width: 90%; /* Reduce width for smaller screens */
+  max-width: max-content;
+  margin: 20px auto; /* Add margin for smaller devices */
+  padding: 20px; /* Adjust padding for better fit */
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for distinction */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.form-container h2 {
+  font-size: 22px; /* Adjust size for responsiveness */
+  font-weight: 600;
+  margin-bottom: 15px; /* Adjust spacing */
+  color: #333333;
+}
+
+/* Form Styling */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container label {
+  align-self: flex-start;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #fece51;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #fece51;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #ddb246;
+}
+
+/* Text and Links */
+.form-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.form-container a {
+  color: blue;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+
+/* For Tablets and larger screens (Max-width: 768px) */
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%; /* Increase width for tablets */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .form-container h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .form-container input {
+    font-size: 14px; /* Adjust input text size */
+    padding: 8px 10px; /* Compact input padding */
+  }
+
+  .form-container button {
+    font-size: 15px; /* Adjust button text size */
+    padding: 10px 16px; /* Compact button padding */
+  }
+}
+
+/* For Mobile screens (Max-width: 480px) */
+@media (max-width: 480px) {
+  .form-container {
+    width: 95%; /* Maximize width for small screens */
+    margin: 10px auto; /* Add spacing */
+    padding: 10px; /* Reduce padding */
+    box-sizing: border-box; /* Prevent overflow due to padding */
+  }
+
+  .form-container h2 {
+    font-size: 18px; /* Reduce heading size */
+  }
+
+  .form-container input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .form-container button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .form-container p {
+    font-size: 12px; /* Adjust text size */
+  }
+
+  .form-container a {
+    font-size: 12px; /* Adjust link size */
+  }
+}
+
+/* For Extremely small screens (Max-width: 320px) */
+@media (max-width: 320px) {
+  .form-container {
+    width: 100%; /* Ensure full width */
+    padding: 8px; /* Reduced padding */
+    margin: 5px auto; /* Adjust margin */
+  }
+
+  .form-container h2 {
+    font-size: 16px; /* Reduce heading size for small screens */
+  }
+
+  .form-container input {
+    font-size: 12px; /* Adjust input text size for tiny screens */
+    padding: 6px 8px; /* Further reduce padding */
+  }
+
+  .form-container button {
+    font-size: 12px; /* Adjust button text size */
+    padding: 8px 12px; /* Reduced padding */
+  }
+
+  .form-container p {
+    font-size: 10px; /* Adjust text size */
+  }
+
+  .form-container a {
+    font-size: 10px; /* Adjust link size */
+  }
+}

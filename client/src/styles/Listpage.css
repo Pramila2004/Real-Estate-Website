@@ -1,0 +1,63 @@
+/* General Styles */
+.list-page {
+  display: flex;
+  flex-direction: row; /* Default layout */
+  height: 100%;
+  margin: 2rem 10rem;
+}
+
+.listContainer {
+  flex: 3;
+  height: 100vh;
+}
+
+.listContainer .wrapper {
+  margin-right: 50px;
+  overflow-y: auto; /* Keep scrollable behavior */
+  height: 500px;
+}
+
+.map {
+  background-color: #fcf5f3;
+  flex: 2;
+  height: 30rem;
+  width: 100%;
+}
+
+.title {
+  padding: 0rem 1rem;
+}
+
+.title h2 {
+  font-weight: bold;
+}
+
+
+
+
+
+@media (max-width: 320px) {
+  .list-page {
+    flex-direction: column; /* Stack items for narrow screens */
+    margin: 1rem 0; /* Minimal margin */
+    overflow-x:hidden ;
+    margin-bottom: 5rem;
+  }
+
+  .listContainer .wrapper {
+    margin-top: 2rem;
+    height: max-content; /* Compact height */
+    margin-right: 0;
+    
+  }
+ 
+
+  .map {
+    height: 15rem; /* Compact map for small screens */
+    padding: 1rem;
+  }
+
+  .title h2 {
+    font-size: 1.2rem; /* Adjust title font size */
+  }
+}

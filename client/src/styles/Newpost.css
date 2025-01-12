@@ -1,0 +1,210 @@
+.new-post-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #fece51;
+}
+
+.form-container button {
+  background-color: #fece51;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #4a53cc;
+}
+
+.upload-img-section {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  text-align: center;
+}
+
+.upload-img-section h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.images-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.image-preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image-preview img:hover {
+  transform: scale(1.05);
+  border-color: #5c67f2;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #fece51;
+}
+
+
+/* Responsive Design */
+
+/* For Tablets and smaller screens (Max-width: 768px) */
+@media (max-width: 768px) {
+  .new-post-page {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .form-container,
+  .upload-img-section {
+    max-width: 100%;
+  }
+}
+
+/* For Mobile screens (Max-width: 480px) */
+@media (max-width: 480px) {
+  .new-post-page {
+    padding: 10px; /* Adjust the page padding */
+  }
+
+  .form-container,
+  .upload-img-section {
+    padding: 15px; /* Reduce padding for smaller screens */
+    margin: 10px 0; /* Adjust margins */
+    max-width: 100%;
+  }
+
+  .form-container h2 {
+    font-size: 18px; /* Adjust the font size of the title */
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container button,
+  textarea {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .form-container label {
+    font-size: 14px; /* Adjust label font size */
+  }
+
+  .image-preview img {
+    width: 80px; /* Reduce image preview size */
+    height: 80px;
+  }
+
+  .images-section {
+    width: 100%; /* Ensure images are centered and take full width */
+  }
+}
+
+/* For very small mobile screens (Max-width: 320px) */
+@media (max-width: 320px) {
+  .new-post-page {
+    padding: 1rem; /* Less padding on very small screens */
+  }
+
+  .form-container,
+  .upload-img-section {
+    padding: 10px; /* Further reduce padding for smallest screens */
+    margin: 5px 0; /* Further reduce margins */
+  }
+
+  .form-container h2 {
+    font-size: 16px; /* Smaller font size for very small screens */
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container button,
+  textarea {
+    font-size: 12px; /* Further reduce font size */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .form-container label {
+    font-size: 12px; /* Adjust label font size */
+  }
+
+  .image-preview img {
+    width: 60px; /* Reduce image size for smallest screens */
+    height: 60px;
+  }
+}
