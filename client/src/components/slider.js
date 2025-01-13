@@ -35,7 +35,7 @@ export default function Slider({ images }) {
           <div className="imagecontainer">
             <img
               src={images[imageIndex]}
-              alt={`Image ${imageIndex + 1}`}
+              alt=""
               onClick={() => changeSlide('right')}
             />
           </div>
@@ -43,7 +43,7 @@ export default function Slider({ images }) {
             <img
               src="/images/arrow.png"
               className="right"
-              alt="Right Arrow"
+              alt=""
               onClick={() => changeSlide('right')}
             />
           </div>
@@ -57,7 +57,7 @@ export default function Slider({ images }) {
       <div className="bigimg">
         <img
           src={images[0]}
-          alt="Image 1"
+          alt=""
           onClick={() => setImageIndex(0)} // Open slider on click
         />
       </div>
