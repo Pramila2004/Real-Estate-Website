@@ -24,7 +24,7 @@ DBConnection();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://real-estate-website-client.onrender.com',
     credentials: true,
 }));
 
