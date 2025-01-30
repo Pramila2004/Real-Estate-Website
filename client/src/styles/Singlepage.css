@@ -196,13 +196,17 @@
     .singlepage {
       margin: 0.5rem; /* Further reduce margin */
       width: 100%;
-      height: 100vh;
+      flex-direction: column;
     }
   
     .details {
       padding: 5%;
+      height: max-content;
     }
-  
+    
+    .features{
+      height: max-content;
+    }
     .post {
       padding: 2rem 1rem;
     }

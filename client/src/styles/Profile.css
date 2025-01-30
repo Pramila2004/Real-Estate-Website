@@ -1,174 +1,107 @@
-.profilePage{
-    display: flex;
-    height: 100%;
-    margin: 4rem 12rem;
-
+.profilePage {
+  display: flex;
+  height: 100%;
+  margin: 4rem 12rem;
+  gap: 2rem;
 }
 
-.details{
-    flex:3;
-    /* overflow-y: scroll; */
-    height: 800px;
-    scrollbar-width: none;
-    
+.details {
+  flex: 3;
+  height: auto;
 }
-.details .wrapper{
-    display: flex;
+
+.details .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  gap: 30px;
+  width: 100%;
+}
+
+.details .wrapper h1 {
+  font-weight: 300;
+}
+
+.details .wrapper button {
+  padding: 12px 24px;
+  background-color: #fece51;
+  cursor: pointer;
+  border: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.chatContainer {
+  flex: 2;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .profilePage {
     flex-direction: column;
-    padding-right: 50px;
-    gap: 50px;
-    width: 100%;
-    
-    
-
-}
-.details .wrapper h1{
-    font-weight: 300; 
-
-}
-.details .wrapper button{
-    padding: 12px 24px;
-    background-color: #fece51;
-    cursor: pointer;
-    border: none;
-}
-
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.info{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.info img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    object-fit: cover;
-}
-.info span{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.chatContainer{
-    flex: 2;
-    height: 100%;
-}
-.chatContainer .wrapper{
-    padding: 0px 20px;
-    height: 100%;
-}
-
-.list{
-    width: 100%;
-}
-
-
-.info .logout-button button{
-    background-color: green;
-}
-
-/* Responsive Design for 320px */
-/* Enhanced Responsive Design for 320px */
-@media (max-width: 320px) {
-    .profilePage {
-      flex-direction: column; /* Stack sections vertically */
-      margin: 1rem; /* Reduce margins for compact layout */
-      height: auto; /* Let content define height */
-      gap: 1rem; /* Add spacing between sections */
-    }
-  
-    .details {
-      width: 100%;
-      flex: none; /* Disable flex behavior */
-      height: auto; /* Adjust to content height */
-      padding: 1rem 0.2rem; /* Add consistent spacing */
-      border-radius: 8px; /* Add subtle rounding */
-    }
-  
-    .details .wrapper {
-      gap: 15px; /* Compact spacing */
-      padding: 0; /* Remove extra padding */
-    }
-  
-    .details .wrapper h1 {
-      font-size: 1.4rem; /* Adjust font size */
-      font-weight: bold; /* Ensure strong title visibility */
-      text-align: center; /* Center-align title */
-    }
-  
-    .details .wrapper button {
-      padding: 12px 1rem; /* Comfortable touch target */
-      font-size: 1rem; /* Legible font size */
-      border-radius: 5px; /* Smooth edges */
-    }
-
-  
-    .title {
-      flex-direction: column; /* Stack elements */
-      gap: 8px; /* Compact spacing */
-      align-items: flex-start; /* Align items to the start */
-      text-align: left; /* Align text left for readability */
-    }
-  
-    .info {
-      gap: 10px; /* Space between items */
-      background-color: #fff; /* Add contrast for readability */
-      border-radius: 8px; /* Rounded edges for aesthetics */
-      padding: 10px; /* Add padding for content spacing */
-  
-    }
-  
-    .info img {
-      width: 36px; /* Maintain profile image size proportional */
-      height: 36px;
-    }
-  
-    .info span {
-      gap: 6px; /* Reduce gap */
-      align-items: flex-start; /* Align to the start */
-      text-align: left; /* Ensure left alignment */
-    }
-
-  
-    .chatContainer {
-      flex: none; /* Disable flex behavior */
-      height: auto; /* Adjust to content height */
-      padding: 1rem; /* Add inner padding */
-      background-color: #fff; /* Contrast for chat area */
-      border-radius: 8px; /* Smooth rounding */
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      margin-top: 1rem; /* Add spacing between sections */
-    }
-  
-    .chatContainer .wrapper {
-      padding: 0; /* Remove horizontal padding */
-    }
-  
-    .list {
-      width: 100%; /* Ensure full width */
-    }
-  
-    .info .logout-button button {
-      width: 100%; /* Full-width button */
-      font-size: 0.9rem; /* Comfortable size */
-      padding: 10px; /* Adequate touch target */
-      border-radius: 5px; /* Rounded edges */
-    }
-  
-    button {
-      transition: all 0.3s ease-in-out; /* Smooth hover effect */
-    }
-  
-    button:hover {
-      background-color: #fcc333; /* Highlighted hover effect */
-      color: #000; /* Keep text readable */
-    }
+    margin: 2rem;
   }
-  
+
+  .details {
+    width: 100%;
+  }
+
+  .details .wrapper {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .details .wrapper {
+    gap: 20px;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profilePage {
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
+  }
+
+  .info img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .details .wrapper button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

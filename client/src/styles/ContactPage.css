@@ -90,7 +90,7 @@ textarea:focus {
 
 @media (max-width: 768px) {
   .contact-page {
-      width: 90%; /* Full width with margins */
+      width: 80%; /* Full width with margins */
       padding: 20px 15px; /* Reduced padding for smaller screens */
   }
 
@@ -116,7 +116,7 @@ textarea:focus {
 
 @media (max-width: 480px) {
   .contact-page {
-      width: 100%; /* Full width */
+      width: 90%; /* Full width */
       padding: 15px 10px; /* Compact padding for small devices */
   }
 
