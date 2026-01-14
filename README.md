@@ -25,19 +25,7 @@ Whether you're looking to **buy, rent, or sell**, this platform provides an easy
 - **Hosting:** Render.com  
 - **Version Control:** Git & GitHub  
 
----
 
-## 📸 Project Screenshots
-<p align="center">
-  <img src="images-copy/realEstate/home.png" width="45%" />
-  <img src="images-copy/realEstate/dashboard.png" width="45%" />
-</p>
-<p align="center">
-  <img src="images-copy/realEstate/details.png" width="45%" />
-  <img src="images-copy/realEstate/listing-form.png" width="45%" />
-</p>
-
----
 
 ## 🚀 Getting Started
 
